@@ -1,0 +1,210 @@
+.footer{
+  background: $blue;
+  padding: 92px 0 0 0;
+  &__top{
+    display: flex;
+    align-items: center;
+
+
+  }
+  &__socials{
+    display: flex;
+    column-gap: 10px;
+    margin-top: 24px;
+    align-items: start;
+  }
+
+  &__social{
+    border:1px solid #FFCA42;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+  }
+
+  &__explore{
+    display: flex;
+    align-items: center;
+    row-gap: 9px;
+    flex-direction: column;
+    margin:0 100px 0 88px;
+
+
+  }
+
+  &__utility{
+    display: flex;
+    align-items: center;
+    row-gap: 9px;
+    flex-direction: column;
+    margin-right: 93px;
+
+  }
+
+  &__list-title{
+    @include text ($cardo, 24px,34px, 0.384px, #ffffff);
+    margin-bottom: 15px;
+
+  }
+  &__list-item{
+    @include text ( $inter, 18px, 31px, 0.18px, $lightblue);
+
+  }
+  &__info{
+    display: flex;
+    row-gap: 28px;
+    flex-direction: column;
+    &-bot{
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      column-gap: 10px;
+    }
+
+
+    &-name{
+      @include text($cardo, 18px,27px, 0.36px, #ffffff);
+    }
+    &-title{
+      @include text ($cardo, 24px,34px, 0.384px, #ffffff);
+      margin-bottom: 27px;
+    }
+
+
+  }
+
+  &__data{
+    display: flex;
+    align-items: center;
+
+    @include text ( $inter, 18px, 31px, 0.18px, $lightblue);
+
+  }
+
+  &__bot{
+    text-align: center;
+    padding: 25px 0;
+    &-bl{
+      @include text ($inter, 17px, 25px, 0.17, $lightblue);
+    }
+    &-wh{
+      @include text ($inter, 17px, 25px, 0.17, #ffffff);
+    }
+
+  }
+}
+
+
+
+
+@media (max-width: 1440px) {
+
+
+}
+
+@media (max-width: 1320px){
+  .footer__explore{
+    margin:0 30px ;
+  }
+
+}
+
+@media (max-width: 1200px){
+  .footer__list-title{
+    @include text ($cardo, 20px,25px, 0.384px, #ffffff);
+  }
+  .footer__list-item{
+    @include text ( $inter, 15px, 25px, 0.18px, $lightblue);
+  }
+  .footer__info-title{
+    @include text ($cardo, 20px,25px, 0.384px, #ffffff);
+  }
+  .footer__info-name{
+    @include text ($cardo, 17px,25px, 0.384px, #ffffff);
+  }
+  .footer__info-data{
+    @include text ( $inter, 15px, 25px, 0.18px, $lightblue);
+  }
+  .footer__explore , .footer__utility{
+    margin: 0 auto ;
+  }
+
+  .footer__img{
+    width: 70px;
+  }
+  .footer__social{
+    width: 30px;
+    height: 30px;
+
+  }
+}
+
+@media (max-width: 1024px) {
+
+
+
+}
+
+@media (max-width: 992px){
+  .footer__explore {
+
+  }
+
+  .footer__utility{
+
+
+  }
+  .footer__info{
+    display: none;
+  }
+
+
+}
+
+@media (max-width: 820px){
+  .footer__bot-bl{
+    @include text ($inter, 15px, 20px, 0.17, $lightblue);
+  }
+  .footer__bot-wh{
+    @include text ($inter, 15px, 20px, 0.17, #fffff);
+
+  }
+}
+
+@media (max-width: 786px) {
+
+
+}
+@media (max-width: 676px) {
+  .footer__bot-bl{
+    @include text ($inter, 13px, 20px, 0.17, $lightblue);
+  }
+  .footer__bot-wh{
+    @include text ($inter, 13px, 20px, 0.17, #fffff);
+
+  }
+
+
+
+}
+
+@media (max-width: 576px){
+  .footer__logos{
+    width: 100%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .footer__top{
+    flex-wrap: wrap;
+
+  }
+
+
+}
+
+@media (max-width: 425px) {
+
+}

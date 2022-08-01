@@ -1,0 +1,110 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight:400;
+}
+
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+$cardo : 'Cardo', serif;
+$inter : 'Inter', sans-serif;
+$white : #F6F8FC;
+$yellow :  #FFCA42;
+$lightblue : #B4C7E7;
+$grey :  #969AA0;
+$blue : #1B3764;
+$extralightblue : #F5F8FC;
+$welcome: 'Edu VIC WA NT Beginner', cursive;
+
+@mixin text($ff, $fs,$lh,$ls,  $cl){
+  font-family:$ff;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+  color: $cl;
+}
+
+
+.title{
+  @include text ($cardo, 42px, 50px, 1.3px, $blue);
+  margin-bottom: 23px;
+}
+@import "btn";
+@import "header";
+@import "home";
+@import "book";
+@import "author";
+@import "best";
+@import "copy";
+@import "learn";
+
+@import "vision";
+@import "readers";
+@import "intro";
+@import "articles";
+@import "updates";
+@import "footer";
+
+@media (max-width: 1440px) {
+
+
+}
+
+@media (max-width: 1320px){
+  .title{
+    @include text ($cardo, 37px, 50px, 1.3px, $blue);
+  }
+
+
+}
+
+@media (max-width: 1200px){
+.title{
+  @include text ($cardo, 31px, 50px, 1.3px, $blue);
+  margin-bottom: 10px;
+}
+
+
+
+}
+
+@media (max-width: 1024px) {
+
+
+}
+
+@media (max-width: 992px){
+
+
+}
+
+@media (max-width: 820px){
+
+
+}
+
+@media (max-width: 786px) {
+
+
+}
+@media (max-width: 676px) {
+  .title{
+    @include text ($cardo, 27px, 50px, 1px, $blue);
+  }
+}
+
+@media (max-width: 576px){
+
+}
+
+@media (max-width: 425px) {
+
+}
+

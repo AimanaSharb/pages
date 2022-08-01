@@ -1,0 +1,143 @@
+.articles{
+  padding: 126px 0 150px;
+  background:  #F4F8FF;
+  &__title{
+    text-align: center;
+    margin-bottom: 70px;
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+  }
+
+  &__card{
+    width: calc(33.33333% - 13.33333px);
+    background: #ffffff;
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.07);
+    border-radius: 5px;
+    &-title{
+      @include text ($cardo, 24px, 34px, 0.24px, $blue);
+    }
+    &-bot{
+      padding: 25px 30px 28px 30px;
+    }
+    &-desc{
+      @include text ($inter, 19px, 30px, 0, $grey);
+      margin: 19px 0 11px;
+    }
+
+    &-btns{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+    }
+    &-link{
+      @include text ($cardo, 19px, 23px, 0.38px, $blue);
+      border-bottom: solid $blue 1px;
+    }
+    &-date{
+      @include text ($inter, 16px, 26px, 0, $blue);
+    }
+
+
+
+
+  }
+
+}
+
+
+
+@media (max-width: 1440px) {
+  .articles__card-img{
+    width: 100%;
+  }
+}
+
+@media (max-width: 1320px){
+  .articles__card-title{
+    @include text ($cardo, 20px, 25px, 0.24px, $blue);
+  }
+  .articles__card-desc{
+    @include text ($inter, 16px, 20px, 0, $grey);
+  }
+
+  .articles__card-link{
+    @include text ($cardo, 15px, 16px, 0.38px, $blue);
+  }
+
+  .articles__card-date{
+    @include text ($inter, 15px, 16px, 0, $blue);
+  }
+}
+
+@media (max-width: 1200px){
+  .articles{
+    padding: 75px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .articles__card-title{
+    @include text ($cardo, 17px, 25px, 0.24px, $blue);
+  }
+  .articles__card-desc{
+    @include text ($inter, 14px, 20px, 0, $grey);
+  }
+
+  .articles__card-link{
+    @include text ($cardo, 14px, 16px, 0.38px, $blue);
+  }
+
+  .articles__card-date{
+    @include text ($inter, 14px, 16px, 0, $blue);
+  }
+
+
+}
+
+@media (max-width: 992px){
+  .articles__card-btns{
+    flex-wrap: wrap;
+
+    row-gap: 20px;
+  }
+}
+
+@media (max-width: 820px){
+  .articles__row{
+    justify-content: center;
+    row-gap: 20px;
+
+  }
+
+  .articles__card{
+    width: 350px;
+  }
+  .articles__card-img{
+    width: 350px ;
+  }
+
+}
+
+@media (max-width: 786px) {
+
+
+}
+@media (max-width: 676px) {
+
+
+}
+
+@media (max-width: 576px){
+
+
+
+}
+
+@media (max-width: 425px) {
+
+}

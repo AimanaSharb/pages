@@ -1,0 +1,131 @@
+.btn{
+  background: #FFCA42;
+  border: 2px solid #FFCA42;
+  font-size: 19px;
+  line-height: 28px;
+  /* identical to box height, or 150% */
+
+  letter-spacing: 0.57px;
+  text-transform: capitalize;
+  padding: 19px 52px;
+  cursor: pointer;
+  color: $blue;
+
+  &_yellow{
+    background: #FFCA42;
+  }
+  &_blank{
+    background: none;
+  }
+  &__blank-wt{
+    background: none;
+    color: white;
+  }
+  &__blue{
+    background: $blue;
+    color: #ffffff;
+    width: 328px;
+  }
+}
+
+
+@media (max-width: 1440px) {
+
+
+}
+
+@media (max-width: 1320px){
+
+
+}
+
+@media (max-width: 1200px){
+
+  .btn{
+    background: #FFCA42;
+    border: 1px solid #FFCA42;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.57px;
+    text-transform: capitalize;
+    padding: 17px 30px;
+    cursor: pointer;
+    color: $blue;
+    &_yellow{
+      background: #FFCA42;
+    }
+    &_blank{
+      background: none;
+    }
+    &__blank-wt{
+      background: none;
+      color: white;
+    }
+    &__blue{
+      background: $blue;
+      color: #ffffff;
+      width: 250px;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+
+
+}
+
+@media (max-width: 992px){
+
+}
+
+@media (max-width: 820px){
+
+
+}
+
+@media (max-width: 786px) {
+  .btn{
+    background: #FFCA42;
+    border: 1px solid #FFCA42;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height, or 150% */
+
+    letter-spacing: 0.57px;
+    text-transform: capitalize;
+    padding: 14px 21px;
+    cursor: pointer;
+    color: $blue;
+    &_yellow{
+      background: #FFCA42;
+    }
+    &_blank{
+      background: none;
+    }
+    &__blank-wt{
+      background: none;
+      color: white;
+    }
+    &__blue{
+      background: $blue;
+      color: #ffffff;
+      width: 245px;
+    }
+  }
+
+}
+@media (max-width: 676px) {
+
+
+}
+
+@media (max-width: 576px){
+
+
+}
+
+@media (max-width: 425px) {
+
+}

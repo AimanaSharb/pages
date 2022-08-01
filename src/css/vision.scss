@@ -1,0 +1,167 @@
+.vision{
+  padding: 116px 0 130px;
+  background: #F4F8FF;
+
+  &__title{
+    @include text ($cardo, 24px, 29px, 0, $blue);
+    margin-bottom:70px;
+    text-align: center;
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 40px;
+    flex-wrap: wrap;
+  }
+  &__card{
+    background: white;
+    padding: 42px 65px 44px 40px;
+    width: calc(50% - 15px);
+    &-title{
+      @include text ($cardo, 24px, 29px, 0, $blue);
+    }
+    &-desc{
+      @include text ($inter, 19px, 32px, 0, $grey);
+      margin: 21px 0 10px;
+    }
+
+  }
+  &__info{
+    display: flex;
+    align-items: center;
+    column-gap: 45px;
+
+  }
+
+  &__pages{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    &-title{
+      @include text ($cardo, 22px, 31px, 0, $blue);
+    }
+    &-desc{
+      @include text ($inter, 17px, 27px, 0, $grey);
+    }
+    &::before{
+      content: url("../images/dot.svg");
+    }
+
+  }
+  &__bot{
+    text-align: center;
+    margin-top:70px;
+    &-txt{
+      margin-top: 34px;
+      @include text ($inter, 18px, 28px, 0, $grey);
+    }
+  }
+  &__link{
+    @include text ($inter, 18px, 28px, 0.19px, $blue);
+  }
+
+  &__contact{
+    @include text ($inter, 19px, 28px, 0, $grey);
+  }
+
+
+}
+
+
+@media (max-width: 1440px) {
+}
+
+@media (max-width: 1320px){
+  .vision{
+    &__card{
+      &-title{
+        @include text ($cardo, 20px, 25px, 0, $blue);
+      }
+      &-desc{
+        @include text ($inter, 16px, 25px, 0, $grey);
+      }
+    }
+    &__pages{
+      &-title{
+        @include text ($cardo, 18px, 24px, 0, $blue);
+      }
+      &-desc{
+        @include text ($inter, 14px, 22px, 0, $grey);
+      }
+
+    }
+    &__bot{
+      &-txt{
+
+        @include text ($inter, 14px, 22px, 0, $grey);
+      }
+    }
+    &__contact{
+      @include text ($inter, 14px, 22px, 0, $grey);
+    }
+    &__link{
+      @include text ($inter, 14px, 22px, 0.19px, $blue);
+    }
+  }
+
+}
+
+@media (max-width: 1200px){
+  .vision__row{
+    flex-wrap: wrap;
+  }
+  .vision__card{
+    width: 100%;
+  }
+  .vision{
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+
+}
+
+@media (max-width: 992px){
+
+
+}
+
+@media (max-width: 820px){
+
+
+}
+
+@media (max-width: 786px) {
+
+
+}
+@media (max-width: 676px) {
+  .vision__info{
+    column-gap: 25px;
+  }
+  .vision__card-title{
+    @include text ($cardo, 19px, 25px, 0, $blue);
+  }
+  .vision__card-desc{
+    @include text ($inter, 15px, 20px, 0, $grey);
+  }
+  .vision__pages-title{
+    @include text ($cardo, 16px, 31px, 0, $blue);
+  }
+  .vision__pages-desc{
+    @include text ($inter, 14px, 20px, 0, $grey);
+  }
+}
+
+@media (max-width: 576px){
+  .vision__info{
+    flex-wrap: wrap;
+  }
+
+}
+
+@media (max-width: 425px) {
+
+}

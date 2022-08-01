@@ -1,0 +1,180 @@
+.readers{
+  padding: 130px 0 150px;
+  background: #F5F5F5;
+  &__content {
+    display: flex;
+    align-items: center;
+    column-gap: 63px;
+  }
+
+  &__left{
+    width: 35%;
+  }
+
+  &__desc{
+    @include text ($inter,19px, 34px, 0, $grey );
+    margin: 33px 0 22px;
+  }
+  &__dots{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+  }
+  &__ratings{
+    @include text ($inter, 18px, 28px, 0, $blue);
+  }
+
+  .readers__book-rating{
+    display: flex;
+    align-items:center;
+    column-gap: 10.5px;
+    margin-bottom: 10px;
+  }
+
+  &__overall{
+    @include text ($inter, 18px, 28px, 0, $blue);
+  }
+
+  &__row{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+
+  &__card-l{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  &__card{
+    max-width: 381px;
+    height: 292px;
+    background: #1B3764;
+    padding: 30px 46px 24px 35px;
+    &-top {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+
+    }
+  }
+
+  &__name{
+    @include text ($cardo, 24px, 29px, 0, white);
+    margin-bottom: 15px;
+  }
+
+  &__quote{
+    @include text ($cardo, 22px, 33px, 0, white);
+    margin: 20px 0 13px;
+  }
+
+  &__text{
+    @include text ($inter, 18px, 29px, 0, $lightblue);
+  }
+
+
+
+}
+
+@media (max-width: 1440px) {
+  .readers__card{
+    width: 381px;
+  }
+}
+
+@media (max-width: 1320px){
+  .readers__content{
+    flex-wrap: wrap;
+    column-gap: 40px;
+  }
+
+  .readers__row{
+    margin-top: 40px;
+  }
+  .readers__row{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .readers__left{
+    width: 50%;
+
+  }
+
+}
+
+@media (max-width: 1200px){
+  .readers__desc{
+    @include text ($inter,15px, 25px, 0, $grey );
+  }
+
+  .readers__overall{
+    @include text ($inter, 14px, 21px, 0, $blue);
+  }
+  .readers__card-img{
+    width: 50px;
+  }
+
+  .readers__name{
+    @include text ($cardo, 20px, 25px, 0, white);
+  }
+  .readers__quote{
+
+    @include text ($cardo, 19px, 25px, 0, white);
+  }
+  .readers__text{
+    @include text ($inter, 15px, 23px, 0, $lightblue);
+  }
+
+  .readers{
+    padding: 100px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  .readers{
+    padding: 75px 0 ;
+  }
+
+}
+
+@media (max-width: 992px){
+  .readers__content{
+    justify-content: center;
+
+  }
+  .readers__left{
+    width: 100%;
+    text-align: center;
+  }
+  .readers__card{
+    display: inline-block;
+    height: 250px;
+
+  }
+
+}
+
+@media (max-width: 820px){
+
+}
+
+@media (max-width: 786px) {
+
+
+}
+@media (max-width: 676px) {
+
+
+}
+
+@media (max-width: 576px){
+
+
+}
+
+@media (max-width: 425px) {
+
+}

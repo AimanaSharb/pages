@@ -1,0 +1,128 @@
+.book{
+  padding: 126px 0 150px;
+  &__top{
+    text-align: center;
+  }
+  &__row{
+    display: flex;
+    align-items: center;
+    margin-top: 70px;
+  }
+  &__card{
+    display: flex;
+    align-items: center;
+    width: calc(50% - 24px);
+    column-gap: 30px;
+    &-title{
+      @include text ($cardo, 32px, 38px, 0.32px, $blue);
+
+    }
+    &-price{
+      @include text ($inter, 21px, 33px, 0, $yellow);
+    margin: 7px 0 17px;
+    }
+
+    &-desc{
+      @include text ($inter, 19px, 28px, 0, $grey);
+    }
+
+    &-type{
+      @include text ($cardo, 24px, 29px, 1px, $blue);
+    margin: 13px 0 27px;
+
+    &::before{
+      content: url("../images/dot.svg");
+      position: relative;
+
+    }
+    }
+
+
+  }
+}
+
+@media (max-width: 1440px) {
+
+}
+
+@media (max-width: 1320px) {
+
+  .book__card-img{
+    width: 250px;
+  }
+}
+
+
+@media (max-width: 1200px) {
+
+  .book__row{
+    flex-wrap: wrap;
+    row-gap: 50px;
+  }
+  .book__card{
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .book__card-title{
+    @include text ($cardo, 25px, 30px, 0.32px, $blue);
+  }
+  .book__card-price{
+    @include text ($inter, 18px, 33px, 0, $yellow)
+  }
+  .book__card-desc{
+    @include text ($inter, 16px, 28px, 0, $grey);
+  }
+  .book__card-type{
+    @include text ($cardo, 19px, 29px, 1px, $blue);
+  }
+
+}
+
+@media (max-width: 992px) {
+  .book{
+    padding: 70px 0 70px;
+  }
+
+}
+
+
+@media (max-width: 820px) {
+  .book__card-title{
+    @include text ($cardo, 21px, 30px, 0.32px, $blue);
+  }
+  .book__card-price{
+    @include text ($inter, 15px, 33px, 0, $yellow)
+  }
+  .book__card-desc{
+    @include text ($inter, 14px, 28px, 0, $grey);
+  }
+  .book__card-type{
+    @include text ($cardo, 15px, 29px, 1px, $blue);
+  }
+
+
+  .book__card-img{
+    width: 200px;
+  }
+}
+
+@media (max-width: 786px) {
+
+}
+
+@media (max-width: 676px) {
+}
+
+@media (max-width: 576px) {
+  .book__card{
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@media (max-width: 425px) {
+
+}
